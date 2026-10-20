@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Minoo Bale Coffee · Scan for Origin</title>
+<style>
+:root{--gold:#A9772B;--brown:#3A2312;--bg:#FBF8F1;--card:#FFFFFF;--bean:#EDE3CC;--tx:#3A2312;--mu:#7A6A58;--bd:#E7DEC9;--ok:#2F6B3C;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1A120B;--card:#251A11;--bean:#33261A;--tx:#F3EBDD;--mu:#B9A992;--bd:#3A2B1D;--brown:#F3EBDD;--gold:#D2A24C;--ok:#7FC08C}}
+:root[data-theme="dark"]{--bg:#1A120B;--card:#251A11;--bean:#33261A;--tx:#F3EBDD;--mu:#B9A992;--bd:#3A2B1D;--brown:#F3EBDD;--gold:#D2A24C;--ok:#7FC08C}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Noto Sans Ethiopic","Segoe UI",sans-serif;line-height:1.55}
+.wrap{max-width:520px;margin:0 auto;padding:0 16px 36px}
+header{text-align:center;padding:28px 16px 18px;background:var(--bean)}
+.logo{font-family:Georgia,serif;font-style:italic;font-size:30px;color:var(--gold);letter-spacing:1px}
+h1{margin:6px 0 0;font-family:Georgia,serif;font-size:46px;line-height:1;color:var(--gold);letter-spacing:3px;font-weight:700}
+h1 span{display:block;color:var(--brown);font-size:36px;letter-spacing:5px}
+.sub{margin-top:10px;font-weight:700;letter-spacing:3px;font-size:13px;color:var(--brown)}
+.badge{margin:-1px auto 0;background:var(--card);border:2px solid var(--gold);border-radius:16px;padding:18px 16px;text-align:center;transform:translateY(-14px)}
+.tick{width:50px;height:50px;border-radius:50%;background:var(--gold);color:#fff;font-size:28px;line-height:50px;margin:0 auto 8px}
+.badge h2{margin:0;color:var(--gold);font-size:21px}
+.badge p{margin:4px 0 0;color:var(--mu);font-size:14px}
+.icons{display:flex;gap:8px;margin-top:2px}
+.ic{flex:1;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 6px;text-align:center;font-size:12px;font-weight:700;letter-spacing:.5px;color:var(--brown)}
+.ic svg{width:34px;height:34px;display:block;margin:0 auto 6px;fill:var(--gold)}
+section{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:14px}
+h3{margin:0 0 10px;font-size:16px;color:var(--gold);letter-spacing:.5px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--bd);font-size:14px}
+.row:last-child{border-bottom:0}
+.row span:first-child{color:var(--mu)}
+.row span:last-child{font-weight:600;text-align:right}
+.pt{font-size:14px;margin:0 0 10px}.pt:last-child{margin:0}
+.pt b{color:var(--brown)}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:700;border-radius:12px;padding:14px;margin-top:10px;font-size:16px}
+.b1{background:var(--gold);color:#fff}
+.b2{background:transparent;color:var(--gold);border:2px solid var(--gold)}
+ul{margin:0;padding-left:18px;font-size:14px}li{margin:6px 0}
+small{display:block;text-align:center;color:var(--mu);margin-top:18px;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">minoo</div>
+<h1>BALE<span>COFFEE</span></h1>
+<div class="sub">ETHIOPIAN ROASTERS</div>
+</header>
+<div class="wrap">
+<div class="badge">
+<div class="tick">&#10003;</div>
+<h2>ኦሪጅናል ምርት · Authentic product</h2>
+<p>ይህ ጥቅል በ Minoo የተመረተና የተረጋገጠ ነው።<br>This pack is genuine Minoo Bale Coffee.</p>
+</div>
+
+<div class="icons">
+<div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21c0-9 6-16 18-18 0 12-7 18-16 18l-2-2zm6-6c2-4 5-7 9-9-5 1-8 4-9 9z"/></svg>100% ORGANIC</div>
+<div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 6.5H21l-5.3 4 2 6.5L12 15l-5.700 4 2-6.500-5.300-4h6.600z"/></svg>ETHIOPIAN ORIGIN</div>
+<div class="ic"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9" transform="rotate(30 12 12)"/></svg>FRESHLY ROASTED</div>
+</div>
+
+<section>
+<h3>የምርት ዝርዝር · Product details</h3>
+<div class="row"><span>Batch no.</span><span id="batch">—</span></div>
+<div class="row"><span>Roast date</span><span id="roast">—</span></div>
+<div class="row"><span>Expiry date</span><span id="exp">—</span></div>
+<div class="row"><span>Origin</span><span>Bale highlands, Ethiopia</span></div>
+<div class="row"><span>Status</span><span style="color:var(--ok)">Genuine</span></div>
+</section>
+
+<section>
+<h3>ስለ ቡናው · Scan for origin</h3>
+<p class="pt"><b>1. Processing:</b> Hand-harvested ripe cherries, wet-processed and sun-dried on raised beds.</p>
+<p class="pt"><b>2. Roasting:</b> Slowly medium-roasted to highlight unique flavor notes.</p>
+<p class="pt"><b>3. Flavor notes:</b> Delicate floral aroma, bright acidity, notes of citrus and cocoa.</p>
+<p class="pt"><b>4. Origin:</b> Sourced from local high-altitude farmers in the Bale highlands.</p>
+<p class="pt"><b>5. Traceability:</b> Every batch carries a batch number and dates you can check above.</p>
+</section>
+
+<section>
+<h3>እውነተኛነቱን እንዴት ያረጋግጣሉ · How to verify</h3>
+<ul>
+<li>በጥቅሉ ላይ ያለው Expiry ቀን ከዚህ ገጽ ጋር መመሳሰሉን ያረጋግጡ · Dates on the pack match this page</li>
+<li>ማሸጊያው ያልተነካ መሆኑን ይመልከቱ · Seal is intact</li>
+<li>ጥርጣሬ ካለ ከታች ደውለው ያሳውቁን · If unsure, call us below</li>
+</ul>
+</section>
+
+<section>
+<h3>ያግኙን · Contact</h3>
+<a class="btn b1" href="tel:+251941160435">ይደውሉ · Call 0941160435</a>
+<a class="btn b2" href="tel:+251918888389">ይደውሉ · Call 0918888389</a>
+</section>
+
+<small>Minoo · Vision Youth · Adama, Ethiopia</small>
+</div>
+<script>
+try{var p=new URLSearchParams(location.search);
+var m={batch:'b',roast:'r',exp:'e'};
+for(var k in m){var v=p.get(m[k]);if(v){document.getElementById(k).textContent=v}}
+}catch(e){}
+</script>
+</body>
+</html>
